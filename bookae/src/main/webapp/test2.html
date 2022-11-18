@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/test2.js"></script>
+    <style>
+        .main_menu > li {
+        background-color: #404040;
+        line-height: 80px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        }
+        .main_menu > li a {
+        display: block;
+        }
+        .main_menu > .point {
+        background-color: rgb(224, 224, 224);
+        }
+        .main_menu > .point a {
+        color: #404040;
+        font-weight: 600;
+        }
+        .main_menu > li:hover {
+        background-color: rgb(224, 224, 224);
+        }
+        .main_menu > li:hover .menu_title {
+        color: #404040;
+        font-weight: 600;
+        }
+        .main_menu .menu_title {
+        font-size: 1.5em;
+        padding-left: 30px;
+        color: rgb(231, 231, 231);
+        }
+    </style>
+</head>
+<body>
+    <ul class="main_menu">
+        <li class="point" onclick="fn_menu_change(this)"><a href="#" class="menu_title">공지사항</a></li>
+        <li onclick="fn_menu_change(this)"><a href="#" class="menu_title">수강신청</a></li>
+        <li class="my_page">
+            <div class="my_page_click_area"><a href="#" class="menu_title">마이페이지</a></div>
+            <ul class="my_page_menu" onclick="fn_menu_change(this)">
+                <li onclick="fn_mypage_change()"><a href="#">전체성적 조회</a></li>
+                <li onclick="fn_mypage_change()"><a href="#">수강중인 과목 조회</a></li>
+                <li onclick="fn_mypage_change()"><a href="#">개인정보</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
